@@ -1867,7 +1867,8 @@ html {
   padding: 15px;
   color: #fff;
 }
-
+@media (max-width: 1280px) {
+}
 
 *,
 *::before,
