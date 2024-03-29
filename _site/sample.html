@@ -22,6 +22,13 @@
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="assets/dist-style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <!--Add the new slick-theme.css if you want the default styling-->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="container mx-auto px-4 md:px-16 tracking-wide bg-slate-50 dark:bg-slate-800 dark:text-white">
 
@@ -230,7 +237,7 @@
 
     
 
-<footer class="relative pt-24 pb-6">
+<footer class="relative pt-20 pb-6">
   <div class="container mx-auto px-4">
     <hr class="my-6 border-blueGray-300">
     <div class="flex flex-wrap items-center md:justify-between justify-center">
@@ -243,6 +250,7 @@
     </div>
   </div>
 </footer>
+
     <div id="up-button" class="fixed bottom-5 right-5 p-2 text-white rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out bg-slate-100" style="display: none;">
     <a href="#top">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-indigo-600 w-6 h-6">
@@ -282,5 +290,36 @@
 
 
   </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $('.portfolio').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+  </script>
   </body>
 </html>
