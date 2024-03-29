@@ -6,6 +6,7 @@ email: wind@example.com
 author: Muhammed Ashfar
 
 lang: en
+baseurl: ''
 
 plugins:
   - jekyll-seo-tag
