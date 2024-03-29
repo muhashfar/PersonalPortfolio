@@ -1,0 +1,23 @@
+---
+layout: base
+---
+<div class="flex justify-center py-8 ">
+  <article class="text-center prose prose-p:font-extralight prose-slate dark:prose-invert prose-h1:underline prose-h1:decoration-2 prose-h1:decoration-indigo-600 prose-h1:underline-offset-4">
+    {{ content }}
+  </article>
+</div>
+
+<div class="md:w-4/5 mx-auto gap-4 md:gap-6 columns-2 columns-1 md:columns-3">
+  {% for post in site.posts %}
+  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
+    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;border-radius: 15px;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
+      <!-- a href="{{ post.url }}"-- ><--a-->
+        <img src="{{ post.image }}" style="border-radius: 15px;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
+        <div class="span-background">
+          <span class="span-text-inside">{{post.title | truncate: 20 }}</span>
+        </div>
+        
+    </div>
+  </div>
+  {% endfor %}
+</div>
