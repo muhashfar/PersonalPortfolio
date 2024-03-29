@@ -6,7 +6,7 @@ email: wind@example.com
 author: Muhammed Ashfar
 
 lang: en
-baseurl: 'PersonalPortfolio'
+baseurl: 'muhashfar.github.io/PersonalPortfolio'
 
 plugins:
   - jekyll-seo-tag
