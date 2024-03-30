@@ -21,7 +21,11 @@ layout: base
   </div>
   {% endfor %}
 </div-->
-<span style="font-family: 'Noto Sans', sans-serif; font-size: 24px; font-weight: 800;" class="heading-slick">Posters</span>
+
+<div style="display: grid; line-height: .58rem;">
+  <span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">പോസ്റ്ററുകൾ  </span>
+  <span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Posters)</span>
+  </div>
 <div class="portfolio">
   {% assign poster = site.posts | where: "category", "Poster" %}
   {% for post in poster %}
