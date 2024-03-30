@@ -2,8 +2,8 @@
 layout: base
 ---
 <div class="flex justify-center py-8 ">
-  <article class="text-center prose prose-p:font-extralight prose-slate dark:prose-invert prose-h1:underline prose-h1:decoration-2 prose-h1:decoration-indigo-600 prose-h1:underline-offset-4">
-    <span style="font-family: 'Noto Sans', sans-serif;">{{ content }}</span>
+  <article class="text-center prose prose-p:font-extralight prose-slate dark:prose-invert prose-h1:decoration-2 prose-h1:decoration-indigo-600 prose-h1:underline-offset-4">
+    <span style="font-family: 'Cedarville Cursive', cursive;">{{ content }}</span>
   </article>
 </div>
 
@@ -21,13 +21,37 @@ layout: base
   </div>
   {% endfor %}
 </div-->
-
+<span style="font-family: 'Noto Sans', sans-serif; font-size: 24px; font-weight: 800;" class="heading-slick">Posters</span>
 <div class="portfolio">
-  {% for post in site.posts %}
+  {% assign poster = site.posts | where: "category", "Poster" %}
+  {% for post in poster %}
   <div style="padding: 10px 10px 30px 10px; display: block;">
   <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
   <div class="slick-caption">
-    <span>{{ post.description }}</span>
+    <span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem;">{{ post.description }}</span>
+  </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div style="display: grid; line-height: .58rem;">
+<span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">മാഗസിൻ കവറുകൾ</span>
+<span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Magazine Covers)</span>
+</div>
+<div class="portfolio">
+  {% assign MagazineCover = site.posts | where: "category", "Magazine Cover" %}
+  {% for post in MagazineCover %}
+  <div style="padding: 10px 10px 30px 10px; display: block;">
+  <div>
+    <span style="display: inline-flex; position: absolute; padding: 5px; margin: 10px; background: rgba(255, 255, 255, 0.24); border-radius: 50px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29);">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    </span>
+    <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
+  </div>
+    <div style="display: block;" class="slick-caption">
+    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem; font-weight: bold;">{{ post.title }} | {{ post.date | date: "%m/%d/%Y" }}</span></div>
+    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem;">{{ post.description }}</span></div>
+    
   </div>
   </div>
   {% endfor %}
