@@ -1,8 +1,8 @@
-domain: example.com
-url: https://example.com
+domain: https://muhashfar.github.io/PersonalPortfolio
+url: https://muhashfar.github.io/PersonalPortfolio
 
 title: Muhash
-email: wind@example.com
+email: muhammedashfar@hotmail.com
 author: Muhammed Ashfar
 
 lang: en
@@ -17,10 +17,10 @@ plugins:
 rrss:
  # discord: ''
  # facebook: hola
- twitter: Hola
- instagram: Hola
+ twitter: 'https://twitter.com/_muhash'
+ instagram: 'https://www.instagram.com/_muhash/'
  # linkedin: ''
  # pinterest: ''
- whatsapp: 123
+ whatsapp: 'https://wa.me/919496659631?text=hey%20%3A)%0A'
  # telegram: ''
  email: muhammedashfar@hotmail.com
