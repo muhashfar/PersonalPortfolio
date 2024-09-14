@@ -5,8 +5,8 @@ backend:
 # when using the default proxy server port
 local_backend: true
 
-logo_url: https://aaroham.netlify.app/uploads/images/aaroham_logo_color.png
-site_url: https://aaroham.vercel.app
+logo_url: https://muhahportfolio.netlify.app/assets/images/logo.png
+site_url: https://muhash.site/
 
 media_folder: "uploads"
 collections:
@@ -101,35 +101,109 @@ collections:
               config:
                 allow_multiple: false
                 choose_url: true
+  # Meta data
+  - label: "Metadata"
+    name: "metadata"
+    file: "_data/metadata.yml"
+    fields:
+      # Title
+      - label: "Title"
+        name: "meta_title"
+        widget: "string"
+        required: true
+        hint: "Name of the website"
+      # Description
+      - label: "Description"
+        name: "meta_desc"
+        widget: "text"
+        required: true
+        hint: "Description about website"
+      # Site Author
+      - label: "Site Author"
+        name: "site_author"
+        widget: "string"
+        required: true
+        hint: "Author of the website"
+      # OG:image
+      - label: "OG:image"
+        name: "og_image"
+        widget: "image"
+        media_folder: /uploads/images/metadata
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+            max_file_size: 100000000
+        required: true
+        # Twitter image
+      - label: "Twitter image"
+        name: "twitter_image"
+        widget: "image"
+        media_folder: /uploads/images/metadata
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+            max_file_size: 100000000
+        required: true
+        hint: "Ex. My Website"
+      # Site Tags
+      - label: "Site Tags"
+        name: "site_tags"
+        widget: "List"
+        required: true
+        hint: "Each item sperated by comma."
+      # Site Language
+      - Label: "Site Language"
+        name: "site_language"
+        widget: "select"
+        options:
+          - { label: "English", value: "English" }
+          - { label: "Malayalam", value: "Malayalam" }
+
+  # ~ Posts Section
   - label: "Posts"
     name: "posts"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preiew_path: "{{title}}"
+    editor:
+      preview: false
     extension: "md"
     fields:
+      # Date of Publish
       - label: "Publish date"
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD"
+      # Layout [Hidden]
       - label: "Layout"
         name: "layout"
         widget: "hidden"
         default: "post"
+      # Title of the post
       - label: "Post title"
         name: "title"
         widget: "string"
         required: true
         hint: "Ex. My very first post."
+      # Author of the post [Hidden]
       - label: "Author"
         name: "author"
         widget: "Hidden"
         default: "Muhammed Ashfar"
+      # Post Image
       - Label: "Post image"
         name: "image"
         widget: "image"
+        media_folder: /uploads/images/posts
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+            max_file_size: 100000000
         required: true
+      # Post Categories
       - label: "Categories"
         name: "categories"
         widget: "select"
@@ -140,14 +214,17 @@ collections:
           - { label: "Project36", value: "Project36" }
           - { label: "Logo", value: "Logo" }
         hint: "Ex. Calligraphy, Poster, Magazine Cover etc"
+      # Post tags
       - label: "Tags"
         name: "tags"
         widget: "list"
         hint: "Each tag should be seperated by comma."
+      # Post Description
       - label: "Description"
         name: "description"
         widget: "text"
         required: true
+      # Post Content
       - label: "Post Content"
         name: "body"
         widget: "markdown"
