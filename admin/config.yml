@@ -16,8 +16,8 @@ collections:
       preview: false
     delete: true
     files:
-      - label: "Metadata"
-        name: "metadata"
+      - label: "Site Info"
+        name: "site_info"
         file: "_config.yml"
         fields:
           - label: "Title"
@@ -89,77 +89,65 @@ collections:
                 max_file_size: 100000000
             required: true
             hint: "*upload atleast 1280*720 images to get better results."
-      - label: "Rule Book"
-        name: "rule_book"
-        file: "_data/rulebook.yml"
+      # Meta data
+      - label: "Metadata"
+        name: "metadata"
+        file: "_data/metadata.yml"
         fields:
-          - label: "Upload Rule Book"
-            name: "url_rulebook"
-            widget: "file"
-            media_folder: /uploads/files
+          # Title
+          - label: "Title"
+            name: "meta_title"
+            widget: "string"
+            required: true
+            hint: "Name of the website"
+          # Description
+          - label: "Description"
+            name: "meta_desc"
+            widget: "text"
+            required: true
+            hint: "Description about website"
+          # Site Author
+          - label: "Site Author"
+            name: "site_author"
+            widget: "string"
+            required: true
+            hint: "Author of the website"
+          # OG:image
+          - label: "OG:image"
+            name: "og_image"
+            widget: "image"
+            media_folder: /uploads/images/metadata
+            choose_url: true
             media_library:
               config:
-                allow_multiple: false
-                choose_url: true
-  # Meta data
-  - label: "Metadata"
-    name: "metadata"
-    file: "_data/metadata.yml"
-    fields:
-      # Title
-      - label: "Title"
-        name: "meta_title"
-        widget: "string"
-        required: true
-        hint: "Name of the website"
-      # Description
-      - label: "Description"
-        name: "meta_desc"
-        widget: "text"
-        required: true
-        hint: "Description about website"
-      # Site Author
-      - label: "Site Author"
-        name: "site_author"
-        widget: "string"
-        required: true
-        hint: "Author of the website"
-      # OG:image
-      - label: "OG:image"
-        name: "og_image"
-        widget: "image"
-        media_folder: /uploads/images/metadata
-        choose_url: true
-        media_library:
-          config:
-            multiple: false
-            max_file_size: 100000000
-        required: true
-        # Twitter image
-      - label: "Twitter image"
-        name: "twitter_image"
-        widget: "image"
-        media_folder: /uploads/images/metadata
-        choose_url: true
-        media_library:
-          config:
-            multiple: false
-            max_file_size: 100000000
-        required: true
-        hint: "Ex. My Website"
-      # Site Tags
-      - label: "Site Tags"
-        name: "site_tags"
-        widget: "List"
-        required: true
-        hint: "Each item sperated by comma."
-      # Site Language
-      - Label: "Site Language"
-        name: "site_language"
-        widget: "select"
-        options:
-          - { label: "English", value: "English" }
-          - { label: "Malayalam", value: "Malayalam" }
+                multiple: false
+                max_file_size: 100000000
+            required: true
+          # Twitter image
+          - label: "Twitter image"
+            name: "twitter_image"
+            widget: "image"
+            media_folder: /uploads/images/metadata
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
+                max_file_size: 100000000
+            required: true
+            hint: "Ex. My Website"
+          # Site Tags
+          - label: "Site Tags"
+            name: "site_tags"
+            widget: "List"
+            required: true
+            hint: "Each item sperated by comma."
+          # Site Language
+          - Label: "Site Language"
+            name: "site_language"
+            widget: "select"
+            options:
+              - { label: "English", value: "English" }
+              - { label: "Malayalam", value: "Malayalam" }
 
   # ~ Posts Section
   - label: "Posts"
