@@ -7,22 +7,32 @@ layout: base
   </article>
 </div>
 
-<!--div class="md:w-4/5 mx-auto gap-4 md:gap-6 columns-2 md:columns-3">
+<!-- Slick carosuel ~ Branding muhash -->
+  <div class="portfolio">
+    <div style="height: 130px; width: 100%; max-width: 400px; background-color: #ccc; margin: 2px; margin-bottom: 20px !important; border-radius: 10px;"><span style="position: absolute; font-size: 10px; margin: 5px;">Ad</span></div>
+    <div style="height: 130px; width: 100%; max-width: 400px; background-color: #c57c7c; margin: 2px; margin-bottom: 20px !important;"></div>
+    <div style="height: 130px; width: 100%; max-width: 400px; background-color: #5a2f2f; margin: 2px; margin-bottom: 20px !important;"></div>
+  </div>
+
+<!-- Posts -->
+<div class="md:w-4/5 mx-auto gap-4 md:gap-6 columns-1 md:columns-3">
   {% for post in site.posts %}
   <div class="md:fadeIn mb-8 break-inside-avoid-column ">
     <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;border-radius: 8px;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="{{ post.url }}"><a>
+      <a href="{{ post.url }}">
         <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-        <div class="span-background">
-          <span class="span-text-inside">{{post.title | truncate: 20 }}</span>
-        </div>
-        
+      <a>
     </div>
-  </div>
+    <div class="span-background">
+      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">{{ post.title | truncate: 20 }} | {{ post.category }}</span>
+    </div>
+  </div>  
   {% endfor %}
-</div-->
+</div>
 
-<div style="display: grid; line-height: .58rem;">
+
+
+<!--div style="display: grid; line-height: .58rem;">
   <span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">പോസ്റ്ററുകൾ  </span>
   <span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Posters)</span>
   </div>
@@ -120,4 +130,4 @@ layout: base
       </div>
       </div>
       {% endfor %}
-    </div>
+    </div-->

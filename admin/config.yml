@@ -1,0 +1,154 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# when using the default proxy server port
+local_backend: true
+
+logo_url: https://aaroham.netlify.app/uploads/images/aaroham_logo_color.png
+site_url: https://aaroham.vercel.app
+
+media_folder: "uploads"
+collections:
+  - label: "Global Site Settings"
+    name: "site_config"
+    editor:
+      preview: false
+    delete: true
+    files:
+      - label: "Metadata"
+        name: "metadata"
+        file: "_config.yml"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            required: true
+            hint: "Ex. My Website"
+          - label: "E-mail"
+            name: "email"
+            widget: "string"
+            required: true
+            hint: "Ex. johndoe@example.com"
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: true
+            hint: "This keywords will be appeared on search engines."
+      - label: "Graphic resources"
+        name: "graphic_resources"
+        file: "_data/resources.yml"
+        fields:
+          - label: "Logo"
+            name: "logo"
+            widget: "image"
+            media_folder: /uploads/images
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
+                max_file_size: 100000000
+            required: true
+            hint: "Ex. My Website"
+          - label: "Top Bar Colour"
+            name: "accent_color"
+            widget: "color"
+            allowInput: true
+            required: true
+            hint: "*Use your accent colour."
+          - label: "Favicon"
+            name: "favicon"
+            widget: "file"
+            media_folder: /uploads/images
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
+                max_file_size: 100000000
+            required: true
+            hint: "Ex. My Website"
+          - label: "Header & Footer Background"
+            name: "head_foot_background"
+            widget: "image"
+            media_folder: /uploads/images
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
+                max_file_size: 100000000
+            required: true
+            hint: "*upload atleast 1280*720 images to get better results."
+          - label: "Body Background"
+            name: "body_background"
+            widget: "image"
+            media_folder: /uploads/images
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
+                max_file_size: 100000000
+            required: true
+            hint: "*upload atleast 1280*720 images to get better results."
+      - label: "Rule Book"
+        name: "rule_book"
+        file: "_data/rulebook.yml"
+        fields:
+          - label: "Upload Rule Book"
+            name: "url_rulebook"
+            widget: "file"
+            media_folder: /uploads/files
+            media_library:
+              config:
+                allow_multiple: false
+                choose_url: true
+      - label: "Posts"
+        name: "posts"
+        folder: "_posts"
+        create: true
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        preiew_path: "{{title}}"
+        extension: "md"
+        fields:
+          - label: "Publish date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+          - label: "Layout"
+            name: "layout"
+            widget: "hidden"
+            default: "post"
+          - label: "Post title"
+            name: "title"
+            widget: "string"
+            required: true
+            hint: "Ex. My very first post."
+          - label: "Author"
+            name: "author"
+            widget: "Hidden"
+            default: "Muhammed Ashfar"
+          - Label: "Post image"
+            name: "image"
+            widget: "image"
+            required: true
+          - label: "Categories"
+            name: "categories"
+            widget: "select"
+            options:
+              - { label: "Poster", value: "Poster" }
+              - { label: "Calligaphy", value: "Calligraphy" }
+              - { label: "Magazine Cover", value: "Magazine Cover" }
+              - { label: "Project36", value: "Project36" }
+              - { label: "Logo", value: "Logo" }
+            hint: "Ex. Calligraphy, Poster, Magazine Cover etc"
+          - label: "Tags"
+            name: "tags"
+            widget: "list"
+            hint: "Each tag should be seperated by comma."
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: true
+          - label: "Post Content"
+            name: "body"
+            widget: "markdown"
+        

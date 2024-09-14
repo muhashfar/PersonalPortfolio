@@ -1862,11 +1862,6 @@ html {
   -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.23);
 }
-.span-text-inside {
-  font-size: 12px;
-  padding: 15px;
-  color: #fff;
-}
 .slick-caption {
   font-size: 10px;
   padding: 5px 10px 5px 10px;

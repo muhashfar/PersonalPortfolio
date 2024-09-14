@@ -8,6 +8,11 @@ author: Muhammed Ashfar
 lang: en
 baseurl: ''
 
+collections:
+  posts:
+    output: true
+    permalink: /:title
+
 plugins:
   - jekyll-seo-tag
 
