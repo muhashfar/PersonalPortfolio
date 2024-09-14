@@ -101,54 +101,54 @@ collections:
               config:
                 allow_multiple: false
                 choose_url: true
-      - label: "Posts"
-        name: "posts"
-        folder: "_posts"
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        preiew_path: "{{title}}"
-        extension: "md"
-        fields:
-          - label: "Publish date"
-            name: "date"
-            widget: "datetime"
-            format: "YYYY-MM-DD"
-          - label: "Layout"
-            name: "layout"
-            widget: "hidden"
-            default: "post"
-          - label: "Post title"
-            name: "title"
-            widget: "string"
-            required: true
-            hint: "Ex. My very first post."
-          - label: "Author"
-            name: "author"
-            widget: "Hidden"
-            default: "Muhammed Ashfar"
-          - Label: "Post image"
-            name: "image"
-            widget: "image"
-            required: true
-          - label: "Categories"
-            name: "categories"
-            widget: "select"
-            options:
-              - { label: "Poster", value: "Poster" }
-              - { label: "Calligaphy", value: "Calligraphy" }
-              - { label: "Magazine Cover", value: "Magazine Cover" }
-              - { label: "Project36", value: "Project36" }
-              - { label: "Logo", value: "Logo" }
-            hint: "Ex. Calligraphy, Poster, Magazine Cover etc"
-          - label: "Tags"
-            name: "tags"
-            widget: "list"
-            hint: "Each tag should be seperated by comma."
-          - label: "Description"
-            name: "description"
-            widget: "text"
-            required: true
-          - label: "Post Content"
-            name: "body"
-            widget: "markdown"
-        
+  - label: "Posts"
+    name: "posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preiew_path: "{{title}}"
+    extension: "md"
+    fields:
+      - label: "Publish date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+      - label: "Post title"
+        name: "title"
+        widget: "string"
+        required: true
+        hint: "Ex. My very first post."
+      - label: "Author"
+        name: "author"
+        widget: "Hidden"
+        default: "Muhammed Ashfar"
+      - Label: "Post image"
+        name: "image"
+        widget: "image"
+        required: true
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        options:
+          - { label: "Poster", value: "Poster" }
+          - { label: "Calligaphy", value: "Calligraphy" }
+          - { label: "Magazine Cover", value: "Magazine Cover" }
+          - { label: "Project36", value: "Project36" }
+          - { label: "Logo", value: "Logo" }
+        hint: "Ex. Calligraphy, Poster, Magazine Cover etc"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        hint: "Each tag should be seperated by comma."
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: true
+      - label: "Post Content"
+        name: "body"
+        widget: "markdown"
+            
