@@ -1,5 +1,5 @@
 ---
-date: 2024-09-15
+date: 2024-09-14
 layout: post
 title: 🗺️ Introducing "ദൂരെ" – A Logo Inspired by Wanderlust and Calligraphy 🗺️
 author: Muhammed Ashfar
