@@ -1019,11 +1019,15 @@
     min-height: 5.125em;
     max-height: 15em;
     border-radius: 5px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter:blur(7px);
     font-size: 0.875em;
     word-wrap: break-word;
     resize: vertical;
-    background-color: #f6f6f6;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     outline: none;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
@@ -1230,7 +1234,8 @@
     border: 1px solid rgba(255, 255, 255, 0.29);
     backdrop-filter: blur(6.1px);
     -webkit-backdrop-filter:blur(6.1);
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04);
   }
   @-webkit-keyframes gt-kf-rotate {
     0% {
