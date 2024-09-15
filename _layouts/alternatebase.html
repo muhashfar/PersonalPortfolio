@@ -4,30 +4,13 @@
 
   <body style="font-family: 'Onest', sans-serif;" class="container mx-auto px-4 md:px-16 tracking-wide bg-slate-50 dark:bg-slate-800 dark:text-white">
 
-    {% include background_grad.html %}
   <div style="position: relative;">
-    {% include navbar.html %}
 
     <div>
       {{ content }}
     </div>
 
-    {% include footer.html %}
-    {% include up_button.html %}
   </div>
-
-  <!-- Jekyll Search -->
-  <script type="text/javascript">
-    SimpleJekyllSearch.init({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      dataSource: '{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<li style="font-family: Manjari; width: 100%; height: 50px; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); margin-bottom: 10px; font-size: 12px;"><a href="{url}" title="{desc}"><span style="background: rgba(255, 82, 82, 0.41); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5.9px); -webkit-backdrop-filter: blur(5.9px); border: 1px solid rgba(255, 82, 82, 0.31); border-radius: 20px; padding: 4px 12px; margin-right: 6px; color: #a20000; font-family: Onest;">{category}</span>{title}<\/a><\/li>',
-      noResultsText: 'No results found',
-      limit: 10,
-      fuzzy: true,
-    });
-  </script>
 
   <!-- Share This -->
   <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66e6f5712d491c00194a1ee8&product=inline-reaction-buttons&source=platform" async="async"></script>

@@ -4,7 +4,7 @@ layout: post
 title: '🌳Digital Art: "Layered Forest" 🌳'
 author: Muhammed Ashfar
 image: /uploads/images/posts/img_2613.jpeg
-category: Poster
+category: Digital Art
 tags:
   - Art
   - Procreate

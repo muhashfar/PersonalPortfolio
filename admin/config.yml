@@ -173,6 +173,7 @@ collections:
           - { label: "Magazine Cover", value: "Magazine Cover" }
           - { label: "Project36", value: "Project36" }
           - { label: "Logo", value: "Logo" }
+          - { label: "Digital Art", value: "Digital Art" }
         hint: "Ex. Calligraphy, Poster, Magazine Cover etc"
       # Post tags
       - label: "Tags"

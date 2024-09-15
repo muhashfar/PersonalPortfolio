@@ -28,9 +28,9 @@
 <meta name="author" content="Muhammed Ashfar">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>“I am seeking, I am striving, I am in it with all my heart” | Muhash</title>
+<title>“Art washes away from the soul the dust of everyday life.” | Muhash</title>
 <meta name="generator" content="Jekyll v3.9.5" />
-<meta property="og:title" content="“I am seeking, I am striving, I am in it with all my heart”" />
+<meta property="og:title" content="“Art washes away from the soul the dust of everyday life.”" />
 <meta name="author" content="Muhammed Ashfar" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions." />
@@ -40,9 +40,9 @@
 <meta property="og:site_name" content="Muhash" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="“I am seeking, I am striving, I am in it with all my heart”" />
+<meta property="twitter:title" content="“Art washes away from the soul the dust of everyday life.”" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Muhammed Ashfar"},"description":"Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions.","headline":"“I am seeking, I am striving, I am in it with all my heart”","name":"Muhash","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Muhammed Ashfar"},"description":"Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions.","headline":"“Art washes away from the soul the dust of everyday life.”","name":"Muhash","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="assets/dist-style.css">
@@ -50,7 +50,10 @@
   <!--Add the new slick-theme.css if you want the default styling-->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
-  
+
+  <!-- Jekyll Search-->
+  <script src="assets/js/jekyll-search.js" type="text/javascript"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -90,7 +93,7 @@
     <nav style="margin-top: 50px;" class="py-4">
   <div class="container mx-auto justify-between items-center">
     <div class="text-xl md:text-2xl font-semibold"><a href="http://localhost:4000"><img style="width: 120px; display: block; margin-left: auto; margin-right: auto;" src="assets/images/logo.PNG"></a></div>
-    <div class="my-auto hidden md:flex items-center space-x-4"><a style="display: none;" class="hover:scale-105 duration-300 page-link " href="/about.html">about</a><a style="display: none;" class="hover:scale-105 duration-300 page-link font-bold" href="/">“I am seeking, I am striving, I am in it with all my heart”</a><a style="display: none;" class="hover:scale-105 duration-300 page-link " href="/sample.html">sample</a><a style="display: none;" class="hover:scale-105 duration-300 page-link " href="/tags/">etiquetas</a></div>
+    <div class="my-auto hidden md:flex items-center space-x-4"><a style="display: none;" class="hover:scale-105 duration-300 page-link " href="/about.html">about</a><a style="display: none;" class="hover:scale-105 duration-300 page-link font-bold" href="/">“Art washes away from the soul the dust of everyday life.”</a><a style="display: none;" class="hover:scale-105 duration-300 page-link " href="/sample.html">sample</a><a style="display: none;" class="hover:scale-105 duration-300 page-link " href="/tags/">etiquetas</a></div>
   </div>
 </nav>
 
@@ -98,12 +101,18 @@
     <div>
       <div class="flex justify-center py-8 ">
   <article class="text-center prose prose-p:font-extralight prose-slate dark:prose-invert prose-h1:decoration-2 prose-h1:decoration-indigo-600 prose-h1:underline-offset-4">
-    <span style="font-family: 'Cedarville Cursive', cursive;"><h1 id="i-am-seeking-i-am-striving-i-am-in-it-with-all-my-heart">“I am seeking, I am striving, I am in it with all my heart”</h1>
-<p>~ Vincent Van Gogh</p>
+    <span style="font-family: 'Playwrite CU', cursive;"><h1 id="art-washes-away-from-the-soul-the-dust-of-everyday-life">“Art washes away from the soul the dust of everyday life.”</h1>
+<p>~ Pablo Picasso</p>
 </span>
   </article>
 </div>
 
+<div class="flex justify-center mx-auto max-w-prose py-8" style="margin-bottom: 10px;">
+  <input type="text" id="search-input" placeholder="Search for my works @muhash" size=12 style="width: 100%; height: 50px; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); font-size: 12px;">
+</div>
+<div class="flex justify-center mx-auto max-w-prose" style="margin-bottom: 30px; padding-bottom: 2.3rem;">
+  <ul style="width: 100%;" id="results-container"></ul>
+</div>
 <!-- Slick carosuel ~ Branding muhash -->
   <!--div class="portfolio">
     <div style="height: 130px; width: 100%; max-width: 400px; background-color: #ccc; margin: 2px; margin-bottom: 20px !important; border-radius: 10px;"><span style="position: absolute; font-size: 10px; margin: 5px;">Ad</span></div>
@@ -121,7 +130,7 @@
       <a>
     </div>
     <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">🌳Digital Art: "La... | Poster</span>
+      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">🌳Digital Art: "La... | Digital Art</span>
     </div>
   </div>  
   
@@ -213,94 +222,10 @@
     </div>
   </div>  
   
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/nediyeduthath">
-        <img src="assets/images/chaaya.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">ചായ | Calligraphy</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/chaaya">
-        <img src="assets/images/nediyeduthath.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">നേടിയെടുത്തത് | Calligraphy</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/Ormakalude-oru-pattupusthakam">
-        <img src="assets/images/innalakalude-oru-pattupushtakam.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">ഓർമകളുടെ ഒരു പറ്റ... | Magazine Cover</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/ante-idea-aayipoyi">
-        <img src="assets/images/ante-idea-aayipoyi.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">എന്റെ ഐഡിയ ആയിപ്പോയി | Calligraphy</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/maram-oru-varam">
-        <img src="assets/images/maram-oru-varam.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">മരം ഒരു വരം | Calligraphy</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/yyo-maveli-povalle">
-        <img src="assets/images/yyo-maveli-povalle.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">യ്യോ മാവേലി പോവല്... | Poster</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/yyo-maveli-povalle-sq">
-        <img src="assets/images/yyo-maveli-povalle_sq.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">യ്യോ മാവേലി പോവല്... | Calligraphy</span>
-    </div>
-  </div>  
-  
-  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
-      <a href="/kawthukam-lesham-kooduthala">
-        <img src="assets/images/kawthukam-lesham-kooduthala.jpg" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      <a>
-    </div>
-    <div class="span-background">
-      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #fff;">കൗതുകം ലേശം കൂടുതലാ | Calligraphy</span>
-    </div>
-  </div>  
-  
+</div>
+
+<div class="flex justify-center mx-auto max-w-prose">
+<a href="/tags/"><span style="padding: 10px 20px; border-radius: 10px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); font-size: 12px;"> See All Posts @muhash </span></a>
 </div>
 
 <!-- Unwanted/inactive code -->
@@ -311,42 +236,6 @@
   </div>
 <div class="portfolio">
   
-  
-  <div style="padding: 10px 10px 30px 10px; display: block;">
-  <div>
-    <span style="display: inline-flex; position: absolute; color: #d71414; padding: 5px 8px 3px 8px; margin: 10px; background: rgba(255, 255, 255, 0.24); border-radius: 50px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29);">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-      <span style="font-size: 10px; font-family: 'Manjari', sans-serif; margin-left: 3px;">Slide to see next post.</span>
-    </span>
-    <img src="/uploads/images/posts/img_2613.jpeg" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-  </div>
-  <div class="slick-caption">
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; font-weight: bold;">🌳Digital Art: "Layered Forest" 🌳 | 09/15/2024</span></div>
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px;"><p>I’m excited to share my latest creation, <em>Layered Forest</em>, which I made using Procreate. This artwork is inspired by a beautiful photograph from the 2024 BBC Wildlife Photography Awards, where a young photographer captured a serene moment in a national park. The depth and emotion of that image struck a chord with me, prompting me to create my own interpretation of a layered forest scene.</p>
-
-<p>The original photograph captured the essence of wildlife in its natural habitat, with a sense of calm and stillness that is often hard to find. It featured a forest scene bathed in soft light, with wildlife quietly moving through the landscape. I wanted to bring that same emotion into my artwork—creating a space that feels untouched by time, where nature takes center stage.</p>
-
-<p>In my piece, the focus is on two peacocks standing serenely in the foreground, symbolizing grace and beauty in the wild. The golden light filtering through the trees captures the magic of dusk, a time when the forest feels both alive and at peace. This moment of harmony between light, shadow, and wildlife is what inspired me the most.</p>
-
-<ul>
-  <li><strong>Layered Depth:</strong> One of the key aspects of this artwork is the layered structure of the forest. I used multiple layers of foliage to give the piece a sense of depth and dimension. Each layer of trees and leaves builds upon the next, creating a 3D effect that invites the viewer to step into the scene and explore the forest’s quiet corners.</li>
-  <li><strong>Play of Light and Shadow:</strong> The lighting in this piece plays a crucial role in setting the mood. The warm, amber glow in the background contrasts with the dark, rich greens of the forest, adding drama and focus to the scene. The way the light filters through the trees enhances the feeling of depth while giving the image a dreamy, almost ethereal quality.</li>
-  <li><strong>Wildlife Silhouettes:</strong> At the center of the scene, two peacocks stand gracefully, their silhouettes framed by the glowing light. These birds symbolize elegance and tranquility. In the distance, other faint silhouettes of wildlife can be seen, blending into the forest as though they are part of the environment itself. This subtle integration of animals into the scene mirrors the harmony between nature and its inhabitants.</li>
-  <li><strong>Intricate Canopy Design:</strong> I paid special attention to the canopy, using detailed brushwork to capture the texture of leaves and tree branches. The overhead canopy creates a natural arch, framing the peacocks and drawing the viewer’s eye into the center of the image. The tree branches curve organically, giving the piece a sense of movement, as if the forest is alive and gently swaying.</li>
-</ul>
-
-<p>Creating <em>Layered Forest</em> was an immersive process, from sketching out the initial idea to refining the final details. I wanted to stay true to the feeling of the original photograph, yet put my own spin on it by emphasizing the layers of depth and the interaction between light and shadow. I spent time experimenting with different color palettes to ensure the warm light in the background contrasted perfectly with the dark greens of the trees, creating a balanced composition.</p>
-
-<p>I also wanted the wildlife to feel integrated into the environment, rather than being the sole focus. By blending the peacocks into the scene, they become part of the overall mood rather than standing out as isolated figures. This approach allowed me to create a sense of peace and coexistence within the forest.</p>
-
-<p><em>Layered Forest</em> is not just a study in light and shadow; it’s a representation of the quiet beauty that exists in nature. The peaceful moment where the day transitions to night, the subtle rustling of leaves, and the calm presence of wildlife—these are the elements I wanted to capture.</p>
-
-<p>This piece reflects my fascination with the natural world, particularly the way light interacts with it. Whether it’s a glowing sunset or the soft rays of dawn, light can transform a landscape, revealing hidden depths and creating a sense of wonder. I hope this artwork evokes a similar feeling of tranquility and appreciation for the small, magical moments that nature offers</p>
-
-<p>Thank you for taking the time to explore my latest digital artwork! I’d love to hear your thoughts—what emotions or memories does this piece evoke for you? Feel free to leave a comment below, and stay tuned for more digital art coming soon!</p>
-</span></div>
-  </div>
-  </div>
   
   <div style="padding: 10px 10px 30px 10px; display: block;">
   <div>
@@ -743,6 +632,19 @@
 
 
   </div>
+
+  <!-- Jekyll Search -->
+  <script type="text/javascript">
+    SimpleJekyllSearch.init({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      dataSource: '/search.json',
+      searchResultTemplate: '<li style="font-family: Manjari; width: 100%; height: 50px; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); margin-bottom: 10px; font-size: 12px;"><a href="{url}" title="{desc}"><span style="background: rgba(255, 82, 82, 0.41); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5.9px); -webkit-backdrop-filter: blur(5.9px); border: 1px solid rgba(255, 82, 82, 0.31); border-radius: 20px; padding: 4px 12px; margin-right: 6px; color: #a20000; font-family: Onest;">{category}</span>{title}<\/a><\/li>',
+      noResultsText: 'No results found',
+      limit: 10,
+      fuzzy: true,
+    });
+  </script>
 
   <!-- Share This -->
   <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66e6f5712d491c00194a1ee8&product=inline-reaction-buttons&source=platform" async="async"></script>

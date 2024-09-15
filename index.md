@@ -2,5 +2,5 @@
 layout: home
 ---
 
-# "I am seeking, I am striving, I am in it with all my heart"
-~ Vincent Van Gogh
+# “Art washes away from the soul the dust of everyday life.”
+~ Pablo Picasso
