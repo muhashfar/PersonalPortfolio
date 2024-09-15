@@ -1,17 +1,24 @@
+# Domain
 domain: https://muhashfar.github.io/PersonalPortfolio
 url: https://muhashfar.github.io/PersonalPortfolio
 
+# Info
 title: Muhash
 email: muhammedashfar@hotmail.com
 author: Muhammed Ashfar
 
+# Language
 lang: en
+
+# Baseurl
 baseurl: ''
 
+# Collections
 collections:
   posts:
     output: true
     permalink: /:title
+
 
 plugins:
   - jekyll-seo-tag

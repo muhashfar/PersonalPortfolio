@@ -5,90 +5,60 @@ backend:
 # when using the default proxy server port
 local_backend: true
 
-logo_url: https://muhahportfolio.netlify.app/assets/images/logo.png
+logo_url: https://muhash.netlify.app/assets/images/logo.png
 site_url: https://muhash.site/
 
+# Media Folder
 media_folder: "uploads"
+
+# Collections
 collections:
+  # Global Site Settings
   - label: "Global Site Settings"
     name: "site_config"
     editor:
       preview: false
     delete: true
+    # Files
     files:
+      # Site Info
       - label: "Site Info"
         name: "site_info"
         file: "_config.yml"
         fields:
+          # Domain
+          - label: "Doamin"
+            name: "domain"
+            widget: "string"
+            required: true
+          - label: "URL"
+            name: "url"
+            widget: "string"
+            required: true
+          # Info
           - label: "Title"
             name: "title"
             widget: "string"
             required: true
-            hint: "Ex. My Website"
-          - label: "E-mail"
+          # Email
+          - label: "Email"
             name: "email"
             widget: "string"
+          # Author
+          - label: "Author"
+            name: "author"
+            widget: "string"
+          # Baseurl
+          - label: "Baseurl"
+            name: "baseurl"
+            widget: "string"
             required: true
-            hint: "Ex. johndoe@example.com"
-          - label: "Description"
-            name: "description"
-            widget: "text"
+          # Language
+          - label: "Language"
+            name: "lang"
+            widget: "string"
             required: true
-            hint: "This keywords will be appeared on search engines."
-      - label: "Graphic resources"
-        name: "graphic_resources"
-        file: "_data/resources.yml"
-        fields:
-          - label: "Logo"
-            name: "logo"
-            widget: "image"
-            media_folder: /uploads/images
-            choose_url: true
-            media_library:
-              config:
-                multiple: false
-                max_file_size: 100000000
-            required: true
-            hint: "Ex. My Website"
-          - label: "Top Bar Colour"
-            name: "accent_color"
-            widget: "color"
-            allowInput: true
-            required: true
-            hint: "*Use your accent colour."
-          - label: "Favicon"
-            name: "favicon"
-            widget: "file"
-            media_folder: /uploads/images
-            choose_url: true
-            media_library:
-              config:
-                multiple: false
-                max_file_size: 100000000
-            required: true
-            hint: "Ex. My Website"
-          - label: "Header & Footer Background"
-            name: "head_foot_background"
-            widget: "image"
-            media_folder: /uploads/images
-            choose_url: true
-            media_library:
-              config:
-                multiple: false
-                max_file_size: 100000000
-            required: true
-            hint: "*upload atleast 1280*720 images to get better results."
-          - label: "Body Background"
-            name: "body_background"
-            widget: "image"
-            media_folder: /uploads/images
-            choose_url: true
-            media_library:
-              config:
-                multiple: false
-                max_file_size: 100000000
-            required: true
-            hint: "*upload atleast 1280*720 images to get better results."
+
       # Meta data
       - label: "Metadata"
         name: "metadata"
@@ -138,13 +108,15 @@ collections:
           # Site Tags
           - label: "Site Tags"
             name: "site_tags"
-            widget: "List"
+            widget: "select"
             required: true
-            hint: "Each item sperated by comma."
+            multiple: true
+            options: ["Art", "Calligraphy", "Poster", "Logo", "Magazine Cover", "Modern", "Flyer", "Illustration", "Nature", "Procreate"]
           # Site Language
           - Label: "Site Language"
             name: "site_language"
             widget: "select"
+            multiple: true
             options:
               - { label: "English", value: "English" }
               - { label: "Malayalam", value: "Malayalam" }
@@ -193,7 +165,7 @@ collections:
         required: true
       # Post Categories
       - label: "Categories"
-        name: "categories"
+        name: "category"
         widget: "select"
         options:
           - { label: "Poster", value: "Poster" }

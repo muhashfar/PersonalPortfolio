@@ -1685,7 +1685,7 @@ html {
 }
 .prose-p\:font-extralight
   :is(:where(p):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
-  font-weight: 200;
+  font-weight: 400;
 }
 .prose-img\:mx-auto
   :is(:where(img):not(:where([class~="not-prose"], [class~="not-prose"] *))) {

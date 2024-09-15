@@ -3,7 +3,7 @@ date: 2023-11-03T10:20:00Z
 layout: post
 title: 🌳 "ഇന്നലകളുടെ അടക്കം പറച്ചിൽ" - A Tribute to Memories 🌳
 image: /uploads/images/posts/innalakalude-adakkam-parachil.jpg
-categories: Magazine Cover
+category: Magazine Cover
 tags:
   - College
   - Illustration
@@ -16,7 +16,6 @@ description: In this artwork, I tried to bring that atmosphere to life the quiet
   or caught up in a moment with a friend. For me, it’s a reminder of those
   simpler times when we could just sit, breathe, and enjoy the company of those
   around us.
-category: Magazine Cover
 ---
 Hey everyone! I’m really excited to share this latest magazine cover I created for **Navodhan 22-23 at Sree Gokulam Medical College & Research Foundation**. This piece is called "**ഇന്നലകളുടെ അടക്കം പറച്ചിൽ**" (which means "The Burial of Yesterdays"), and it’s inspired by a very special place on our campus the Pride Bench.
 

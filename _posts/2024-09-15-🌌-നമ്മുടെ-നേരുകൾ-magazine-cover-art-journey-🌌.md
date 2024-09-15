@@ -4,15 +4,13 @@ layout: post
 title: 🌌 "നമ്മുടെ നേരുകൾ" - Magazine Cover Art Journey 🌌
 author: Muhammed Ashfar
 image: /uploads/images/posts/f74cc252-6c54-497c-8e4c-b45a89c519f6.jpg
-categories: Magazine Cover
+category: Magazine Cover
 tags:
   - Art
   - Illustration
   - Procreate
   - MagazineCover
   - CollegeDays
-  - Life
-  - NightSky
 description: This cover is more than just an illustration to me; it's a blend of
   memories, feelings, and the unique energy of our college community. I hope it
   brings back some of your own memories and makes you feel the warmth and

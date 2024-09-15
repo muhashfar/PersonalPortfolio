@@ -4,7 +4,7 @@ layout: post
 title: 📸 "Perspective" - A Logo Redefining the Art of Photography 📸
 author: Muhammed Ashfar
 image: /uploads/images/posts/75fd5f23-760e-4252-a455-3375204c5442.jpg
-categories: Logo
+category: Logo
 tags:
   - Logo
   - Photography
