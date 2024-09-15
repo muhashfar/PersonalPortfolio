@@ -12,11 +12,12 @@ tags:
   - Illustration
   - Valentie'sDay
   - Flyer
-description: “Kanmani Anbodu (கண்மணி அன்போடு)” is a Valenties day celebration
-  poster made for Navodhan 23’24 college union of Sree Gokulam medical college
-  and Research Foundation. Adapting the beautiful tale of a whale & a bird
-  depicted on tamil movie 96; design from malayalam movie Vishudha Fejo(വിശുദ്ധ
-  ഫെജോ)
+description: The poster features a harmonious blend of illustrations, including
+  a whale and a sparrow surrounded by blooming flowers, capturing the essence of
+  longing and separation. The earthy tones and organic shapes emphasize the
+  natural beauty and emotional depth of such relationships. The typography is
+  bold and expressive, highlighting the theme "Kanmani Anbodu" and making it
+  visually striking and memorable.
 category: Poster
 ---
 I created this poster for the "**Kanmani Anbodu**" program, hosted by the Navodhan College Union at Sree Gokulam Medical College. The artwork was designed using **Procreate**.
