@@ -66,7 +66,13 @@ layout: base
     </a>
     {% endif %}
   </div>
-
+  <div class="flex justify-center items-center gap-2 pt-4">
+    <!-- Applause-->
+    <applause-button style="height: 50px; width: 50px;" class="mb6"
+    color={{ site.accent_color | default:'rgb(27,0,199)' }}
+    url={{ post.url | absolute_url }} >
+    </applause-button>
+    </div>
   {%- if site.disqus.shortname -%}
     <div class="mx-auto max-w-prose py-8">
       {%- include disqus_comments.html -%}

@@ -36,3 +36,11 @@ rrss:
  whatsapp: 'https://wa.me/919496659631?text=hey%20%3A)%0A'
  # telegram: ''
  email: muhammedashfar@hotmail.com
+
+defaults:
+  # You can use the following to enable comments on all posts.
+  - scope:
+      type: posts
+    values:
+      # https://applause-button.com/
+      applause_button: true
