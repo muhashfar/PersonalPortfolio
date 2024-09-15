@@ -1,5 +1,5 @@
 ---
-date: 2024-09-15
+date: 2024-09-14
 layout: post
 title: 🔥Agneya ~ College Day Poster Design Reveal🔥
 author: Muhammed Ashfar

@@ -28,13 +28,13 @@
 <meta name="author" content="Muhammed Ashfar">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Muhash | Personal Portfolio ~ Muhash</title>
+<title>Muhash | Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions.</title>
 <meta name="generator" content="Jekyll v3.9.5" />
 <meta property="og:title" content="Muhash" />
 <meta name="author" content="Muhammed Ashfar" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Personal Portfolio ~ Muhash" />
-<meta property="og:description" content="Personal Portfolio ~ Muhash" />
+<meta name="description" content="Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions." />
+<meta property="og:description" content="Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions." />
 <link rel="canonical" href="http://localhost:4000/404.html" />
 <meta property="og:url" content="http://localhost:4000/404.html" />
 <meta property="og:site_name" content="Muhash" />
@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Muhash" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Muhammed Ashfar"},"description":"Personal Portfolio ~ Muhash","headline":"Muhash","url":"http://localhost:4000/404.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Muhammed Ashfar"},"description":"Welcome to Muhash, my personal portfolio that showcases my creative work. The site features a clean and intuitive design, putting my artwork front and center, with minimalist aesthetic, the layout ensures seamless navigation, allowing visitors toexplore my projects without distractions.","headline":"Muhash","url":"http://localhost:4000/404.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="assets/dist-style.css">
@@ -57,6 +57,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Onest:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+  <!-- GitTalk -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -221,7 +223,21 @@
 
 
   </div>
-  <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+  <!-- GitTalk -->
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+    clientID: 'Ov23lijkGN5gC5rW25X4',
+    clientSecret: 'd15ae7c606acfb912956237d7ccf6b781a8dd5e0',
+    repo: 'PersonalPortfolio',      // The repository of store comments,
+    owner: 'muhashfar',
+    admin: ['muhashfar'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+  </script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
