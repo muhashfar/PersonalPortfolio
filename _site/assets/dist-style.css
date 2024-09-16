@@ -259,6 +259,15 @@ html {
   --tw-backdrop-opacity: ;
   --tw-backdrop-saturate: ;
   --tw-backdrop-sepia: ;
+  --bg: #ffffff;
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+  --clr-4: #ff4c7c;
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
 }
 .container {
   width: 100%;
@@ -295,6 +304,7 @@ html {
 .prose :where(p):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
+  font-size: 12px;
 }
 .prose
   :where([class~="lead"]):not(
