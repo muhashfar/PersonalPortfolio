@@ -1,0 +1,45 @@
+---
+layout: feed
+permalink: /feed
+---
+  
+  <div class="container notifications-container shadow">
+    <!-- Header -->
+    <div class="row header">
+      <div class="col-7">
+        <p class="title">
+          Muhash's Feed
+          <!-- Unread Message Count-->
+          <span class="unread-notifications-number">{{ site.feeds | size }}</span>
+        </p>
+      </div>
+      <!-- Read Messages -->
+      <div class="col-5 mark-as-read text-end">
+        <a href="#" id="markAllAsRead" class="mark-as-read-button align-middle">Mark all as read</a>
+      </div>
+    </div>
+
+    <!-- Feed Items -->
+    <div class="row notifications">
+      <div class="col-12">
+
+        <!-- Feed Item -->
+        {% for feed in site.feeds %}
+        <div class="row single-notification-box {% if feed.unread == 'true' %}unread{% endif %}">
+          <div class="col-1 profile-picture">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="profile picture" class="img-fluid">
+          </div>
+          <div class="col-11 notification-text">
+            <p style="font-size: 12px;">
+            <a href="#" class="link name">{{ feed.author }}</a>
+            <span class="description">sent a message on <b>{{ feed.category }}</b></span>
+            <span class="unread-symbol">•</span>
+            </p>
+            <p class="time" style="font-size: 12px;">{{ feed.date | date_to_long_string }}</p>
+            <div class="private-message" style="font-size: 12px;">
+              {{ feed.content }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- End Feed item -->

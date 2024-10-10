@@ -1,12 +1,24 @@
 ---
 layout: base
 ---
+
+<!-- Menu -->
+ <div style="background: rgba(255, 255, 255, 0.3); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.7px); -webkit-backdrop-filter: blur(6.7px); border: 1px solid rgba(255, 255, 255, 0.3); position: fixed; right: 10px; padding: 10px 10px; display: block">
+  {% for item in site.menu %}
+  <a href="{{ site.baseurl }}{{ item.url }}">
+  <span style="margin: 14px 0px 14px 0px; display: block;">{{ item.icon }}<p style="font-size: 6px; display: grid; justify-content: center;">{{ item.title }}</p></span>
+  </a>
+  {% endfor %}
+</div>
 <!-- Qoute of the day -->
+
 <div class="flex justify-center py-8 ">
   <article style="width: 100%;" class="prose prose-p:font-extralight prose-slate dark:prose-invert prose-h1:decoration-2 prose-h1:decoration-indigo-600 prose-h1:underline-offset-4">
     <span>{{ content }}</span>
   </article>
 </div>
+
+<!-- Search -->
 
 <div class="flex justify-center mx-auto max-w-prose py-8" style="margin-bottom: 10px;">
   <input type="text" id="search-input" placeholder="Search for my works @muhash" size=12 style="width: 100%; height: 50px; padding: 15px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); font-size: 12px;">
@@ -16,6 +28,7 @@ layout: base
 </div>
 
 <!-- Collaborations -->
+
 <div class="flex justify-center mx-auto max-w-prose">
   <span style="font-size: 25px; font-weight: 700;">Collaborations</span>
 </div> 
@@ -27,13 +40,14 @@ layout: base
 </div>
 
 <!-- Posts -->
+
 <div class="flex justify-center mx-auto max-w-prose" style="margin-bottom: 10px; padding-bottom: 2.3rem;">
   <span style="font-size: 25px; font-weight: 700;">Explore posts</span>
 </div>
 <div class="md:w-4/5 mx-auto gap-4 md:gap-6 columns-1 md:columns-3">
   {% for post in site.posts | limit:9 %}
   <div class="md:fadeIn mb-8 break-inside-avoid-column ">
-    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;" class="hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-104 duration-300">
+    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;">
       <a href="{{ post.url }}">
         <img src="{{ site.baseurl }}{{ post.image }}" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
       <a>
@@ -45,108 +59,8 @@ layout: base
   {% endfor %}
 </div>
 
-<div class="flex justify-center mx-auto max-w-prose">
+<!-- See More -->
+
+<div class="flex justify-center mx-auto max-w-prose" style="margin-top: 10px;">
 <a href="{{ site.baseurl }}/tags/"><span style="padding: 10px 20px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); font-size: 12px;"> See All Posts @muhash </span></a>
 </div>
-
-<!-- Unwanted/inactive code -->
-
-<!--div style="display: grid; line-height: .58rem;">
-  <span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">പോസ്റ്ററുകൾ  </span>
-  <span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Posters)</span>
-  </div>
-<div class="portfolio">
-  {% assign poster = site.posts | where: "category", "Poster" %}
-  {% for post in poster %}
-  <div style="padding: 10px 10px 30px 10px; display: block;">
-  <div>
-    <span style="display: inline-flex; position: absolute; color: #d71414; padding: 5px 8px 3px 8px; margin: 10px; background: rgba(255, 255, 255, 0.24); border-radius: 50px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29);">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-      <span style="font-size: 10px; font-family: 'Manjari', sans-serif; margin-left: 3px;">Slide to see next post.</span>
-    </span>
-    <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-  </div>
-  <div class="slick-caption">
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; font-weight: bold;">{{ post.title }} | {{ post.date | date: "%m/%d/%Y" }}</span></div>
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px;">{{ post.content }}</span></div>
-  </div>
-  </div>
-  {% endfor %}
-</div>
-
-<div style="display: grid; line-height: .58rem;">
-<span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">മാഗസിൻ കവറുകൾ</span>
-<span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Magazine Covers)</span>
-</div>
-<div class="portfolio">
-  {% assign MagazineCover = site.posts | where: "category", "Magazine Cover" %}
-  {% for post in MagazineCover %}
-  <div style="padding: 10px 10px 30px 10px; display: block;">
-  <div>
-    <span style="display: inline-flex; position: absolute; color: #d71414; padding: 5px 8px 3px 8px; margin: 10px; background: rgba(255, 255, 255, 0.24); border-radius: 50px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29);">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-      <span style="font-size: 10px; font-family: 'Manjari', sans-serif; margin-left: 3px;">Slide to see next post.</span>
-    </span>
-    <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-  </div>
-    <div style="display: block;" class="slick-caption">
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; font-weight: bold;">{{ post.title }} | {{ post.date | date: "%m/%d/%Y" }}</span></div>
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px;">{{ post.content }}</span></div>
-    
-  </div>
-  </div>
-  {% endfor %}
-</div>
-
-
-<div style="display: grid; line-height: .78rem;">
-  <span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">പ്രോജക്ട് 36  </span>
-  <span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Project 36)</span>
-  <div style="display: block; margin-top: 10px" class="slick-caption">
-    <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px;">Project 36 is collaboration of original work of <b>@karlmccarthydesign</b> under title <b>Recreating Calligraphy</b>. We are decided to build a opensource alphabets.</span></div>
-  </div>
-</div>
-  <div class="portfolio">
-    {% assign Project36 = site.posts | where: "category", "Project 36" %}
-    {% for post in Project36 %}
-    <div style="padding: 10px 10px 30px 10px; display: block;">
-    <div>
-      <span style="display: inline-flex; position: absolute; color: #d71414; padding: 5px 8px 3px 8px; margin: 10px; background: rgba(255, 255, 255, 0.24); border-radius: 50px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29);">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-        <span style="font-size: 10px; font-family: 'Manjari', sans-serif; margin-left: 3px;">Slide to see next post.</span>
-      </span>
-      <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-    </div>
-      <div style="display: block;" class="slick-caption">
-      <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem; font-weight: bold;">{{ post.title }} | {{ post.date | date: "%m/%d/%Y" }}</span></div>
-      <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem;">{{ post.description }}</span></div>
-      
-    </div>
-    </div>
-    {% endfor %}
-  </div>
-
-
-  <div style="display: grid; line-height: .6rem;">
-    <span style="font-family: 'Manjari', sans-serif; font-size: 24px; font-weight: bold;" class="heading-slick">കാലിഗ്രാഫികൾ    </span>
-    <span style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" class="heading-slick">(Calligraphies)</span>
-  </div>
-    <div class="portfolio">
-      {% assign Calligraphies = site.posts | where: "category", "Calligraphy" %}
-      {% for post in Calligraphies %}
-      <div style="padding: 10px 10px 30px 10px; display: block;">
-      <div>
-        <span style="display: inline-flex; position: absolute; color: #d71414; padding: 5px 8px 3px 8px; margin: 10px; background: rgba(255, 255, 255, 0.24); border-radius: 50px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29);">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span style="font-size: 10px; font-family: 'Manjari', sans-serif; margin-left: 3px;">Slide to see next post.</span>
-        </span>
-        <img src="{{ site.baseurl }}{{ post.image }}" style="border-radius: 8px; margin: 10px auto;" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
-      </div>
-        <div style="display: block;" class="slick-caption">
-        <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem; font-weight: bold;">{{ post.title }} | {{ post.date | date: "%m/%d/%Y" }}</span></div>
-        <div><span style="font-family: 'Manjari', sans-serif; font-size: 10px; line-height: .01rem;">{{ post.description }}</span></div>
-        
-      </div>
-      </div>
-      {% endfor %}
-    </div-->

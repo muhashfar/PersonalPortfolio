@@ -20,10 +20,13 @@ p {
 }
 
 .notifications-container {
-  background-color: white;
-  border-radius: 13px;
   padding: 30px;
   max-width: 731px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 39.9375em) {
@@ -47,9 +50,9 @@ p {
 
 .notifications-container .header .title .unread-notifications-number {
   color: white;
-  background-color: #0a317b;
-  padding: 2px 13px;
-  border-radius: 5px;
+  background-color: #ff2049;
+  padding: 2px 8px;
+  border-radius: 50%;
   margin-left: 12px;
 }
 
@@ -84,10 +87,13 @@ p {
 
 .notifications-container .notifications .single-notification-box {
   padding: 17px;
-  border-radius: 7px;
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .notifications-container .notifications .single-notification-box .profile-picture {
@@ -163,8 +169,7 @@ p {
 
 .notifications-container .notifications .single-notification-box .notification-text .private-message {
   padding: 20px;
-  border: 1px solid #e5effa;
-  border-radius: 7px;
+  border: 1px solid #d6d6d6;
   margin-top: 10px;
   color: #5e6778;
   -webkit-transition: all ease-in-out 200ms;
@@ -178,7 +183,7 @@ p {
 }
 
 .notifications-container .notifications .single-notification-box .notification-text .private-message:hover {
-  background-color: #e5effa;
+  background-color: #cfcfcf;
   cursor: pointer;
 }
 
