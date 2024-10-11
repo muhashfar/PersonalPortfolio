@@ -1,0 +1,8 @@
+<!-- Menu -->
+<div style="border-radius: 10px; z-index: 100; background: rgba(255, 255, 255, 0.3); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.7px); -webkit-backdrop-filter: blur(6.7px); border: 1px solid rgba(255, 255, 255, 0.3); position: fixed; right: 10px; padding: 10px 10px; display: block; top: 10px;">
+    {% for item in site.menu %}
+    <a style="text-decoration: none;" href="{{ site.baseurl }}{{ item.url }}">
+    <span style="margin: 14px 0px 14px 0px; display: block;">{{ item.icon }}<p style="font-size: 6px; display: grid; justify-content: center; color: rgb(101, 99, 255);">{{ item.title }}</p></span>
+    </a>
+    {% endfor %}
+  </div>

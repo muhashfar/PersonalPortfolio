@@ -32,13 +32,13 @@ plugins:
 # Menu
 menu:
   - title: 'Home'
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>'
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path fill="#a2a1ff" d="M4.03027,16.24268l-2-8A1.00014,1.00014,0,0,1,3.457,7.11035l3.85156,1.979L11.1748,3.43555a1.03743,1.03743,0,0,1,1.6504,0l3.86621,5.65381,3.85156-1.979a1.00014,1.00014,0,0,1,1.42676,1.13233l-2,8Z"/><path fill="#6563ff" d="M19.96973,16.24268H4.03027L4,16.12158V20a.99974.99974,0,0,0,1,1H19a.99974.99974,0,0,0,1-1V16.12158Z"/><circle cx="12" cy="12" r="1" fill="#6563ff"/></svg>'
     url: '/'
-  - title: 'Feed'
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>'
-    url: '/feed'
+  - title: 'Profile'
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><circle cx="12" cy="10" r="4" fill="#c1c0ff"/><path fill="#6563ff" d="M14.97552,12.65015C14.24292,13.47217,13.18774,14,12,14c-1.18762,0-2.24274-0.52771-2.97534-1.34961C6.62628,13.61182,4.80951,15.68524,4.21002,18.25C6.10425,20.61591,8.96924,21.99506,12,22c3.03076-0.00494,5.89575-1.38409,7.78998-3.75C19.17303,15.61072,17.31287,13.58978,14.97552,12.65015z"/><path fill="#a2a1ff" d="M9.02466,12.65039C8.39453,11.94348,8,11.02155,8,10c0-2.20917,1.79083-4,4-4s4,1.79083,4,4c0,1.02142-0.39447,1.94324-1.02448,2.65015c2.33069,0.93695,4.18561,2.94965,4.80786,5.57794c1.37164-1.70923,2.19659-3.8761,2.19659-6.2381c0-5.51178-4.4682-9.97998-9.97998-9.97998s-9.97998,4.4682-9.97998,9.97998c0,2.362,0.82495,4.52881,2.19659,6.23804C4.82141,15.67371,6.6333,13.60901,9.02466,12.65039z"/></svg>'
+    url: '/profile'
   - title: 'Search'
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path fill="#c1c0ff" d="M11,18c-3.86599,0-7-3.13401-7-7s3.13401-7,7-7s7,3.13401,7,7C17.99565,14.86419,14.86419,17.99565,11,18z"/><path fill="#a2a1ff" d="M11,2c-4.97058,0-9,4.02942-9,9s4.02942,9,9,9c4.96826-0.00562,8.99438-4.03174,9-9C20,6.02942,15.97058,2,11,2z M11,18c-3.86597,0-7-3.13403-7-7s3.13403-7,7-7s7,3.13403,7,7C17.99567,14.8642,14.8642,17.99567,11,18z"/><path fill="#6563ff" d="M21.70575,20.29187l-3.68091-3.68091c-0.41785,0.52228-0.89172,0.99615-1.414,1.414l3.68085,3.68097c0.00079,0.00079,0.00159,0.00159,0.00232,0.00238c0.39117,0.38983,1.02429,0.38879,1.41412-0.00238C22.09796,21.31482,22.09686,20.6817,21.70575,20.29187z"/></svg>'
     url: '/search'
 
 
@@ -49,7 +49,7 @@ rrss:
  instagram: 'https://www.instagram.com/_muhash/'
  # linkedin: ''
  # pinterest: ''
- whatsapp: 'https://wa.me/919496659631?text=hey%20%3A)%0A'
+ whatsapp: 'https://wa.me/918848403432?text=hey%20%3A)%0A'
  # telegram: ''
  email: muhammedashfar@hotmail.com
 

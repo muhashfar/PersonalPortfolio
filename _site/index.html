@@ -108,21 +108,23 @@
 
     <div>
       <!-- Menu -->
- <div style="z-index: 100; background: rgba(255, 255, 255, 0.3); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.7px); -webkit-backdrop-filter: blur(6.7px); border: 1px solid rgba(255, 255, 255, 0.3); position: fixed; right: 10px; padding: 10px 10px; display: block">
-  
-  <a href="/">
-  <span style="margin: 14px 0px 14px 0px; display: block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><p style="font-size: 6px; display: grid; justify-content: center;">Home</p></span>
-  </a>
-  
-  <a href="/feed">
-  <span style="margin: 14px 0px 14px 0px; display: block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><p style="font-size: 6px; display: grid; justify-content: center;">Feed</p></span>
-  </a>
-  
-  <a href="/search">
-  <span style="margin: 14px 0px 14px 0px; display: block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><p style="font-size: 6px; display: grid; justify-content: center;">Search</p></span>
-  </a>
-  
-</div>
+<!-- Menu -->
+<div style="border-radius: 10px; z-index: 100; background: rgba(255, 255, 255, 0.3); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(6.7px); -webkit-backdrop-filter: blur(6.7px); border: 1px solid rgba(255, 255, 255, 0.3); position: fixed; right: 10px; padding: 10px 10px; display: block; top: 10px;">
+    
+    <a style="text-decoration: none;" href="/">
+    <span style="margin: 14px 0px 14px 0px; display: block;"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path fill="#a2a1ff" d="M4.03027,16.24268l-2-8A1.00014,1.00014,0,0,1,3.457,7.11035l3.85156,1.979L11.1748,3.43555a1.03743,1.03743,0,0,1,1.6504,0l3.86621,5.65381,3.85156-1.979a1.00014,1.00014,0,0,1,1.42676,1.13233l-2,8Z"/><path fill="#6563ff" d="M19.96973,16.24268H4.03027L4,16.12158V20a.99974.99974,0,0,0,1,1H19a.99974.99974,0,0,0,1-1V16.12158Z"/><circle cx="12" cy="12" r="1" fill="#6563ff"/></svg><p style="font-size: 6px; display: grid; justify-content: center; color: rgb(101, 99, 255);">Home</p></span>
+    </a>
+    
+    <a style="text-decoration: none;" href="/profile">
+    <span style="margin: 14px 0px 14px 0px; display: block;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><circle cx="12" cy="10" r="4" fill="#c1c0ff"/><path fill="#6563ff" d="M14.97552,12.65015C14.24292,13.47217,13.18774,14,12,14c-1.18762,0-2.24274-0.52771-2.97534-1.34961C6.62628,13.61182,4.80951,15.68524,4.21002,18.25C6.10425,20.61591,8.96924,21.99506,12,22c3.03076-0.00494,5.89575-1.38409,7.78998-3.75C19.17303,15.61072,17.31287,13.58978,14.97552,12.65015z"/><path fill="#a2a1ff" d="M9.02466,12.65039C8.39453,11.94348,8,11.02155,8,10c0-2.20917,1.79083-4,4-4s4,1.79083,4,4c0,1.02142-0.39447,1.94324-1.02448,2.65015c2.33069,0.93695,4.18561,2.94965,4.80786,5.57794c1.37164-1.70923,2.19659-3.8761,2.19659-6.2381c0-5.51178-4.4682-9.97998-9.97998-9.97998s-9.97998,4.4682-9.97998,9.97998c0,2.362,0.82495,4.52881,2.19659,6.23804C4.82141,15.67371,6.6333,13.60901,9.02466,12.65039z"/></svg><p style="font-size: 6px; display: grid; justify-content: center; color: rgb(101, 99, 255);">Profile</p></span>
+    </a>
+    
+    <a style="text-decoration: none;" href="/search">
+    <span style="margin: 14px 0px 14px 0px; display: block;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path fill="#c1c0ff" d="M11,18c-3.86599,0-7-3.13401-7-7s3.13401-7,7-7s7,3.13401,7,7C17.99565,14.86419,14.86419,17.99565,11,18z"/><path fill="#a2a1ff" d="M11,2c-4.97058,0-9,4.02942-9,9s4.02942,9,9,9c4.96826-0.00562,8.99438-4.03174,9-9C20,6.02942,15.97058,2,11,2z M11,18c-3.86597,0-7-3.13403-7-7s3.13403-7,7-7s7,3.13403,7,7C17.99567,14.8642,14.8642,17.99567,11,18z"/><path fill="#6563ff" d="M21.70575,20.29187l-3.68091-3.68091c-0.41785,0.52228-0.89172,0.99615-1.414,1.414l3.68085,3.68097c0.00079,0.00079,0.00159,0.00159,0.00232,0.00238c0.39117,0.38983,1.02429,0.38879,1.41412-0.00238C22.09796,21.31482,22.09686,20.6817,21.70575,20.29187z"/></svg><p style="font-size: 6px; display: grid; justify-content: center; color: rgb(101, 99, 255);">Search</p></span>
+    </a>
+    
+  </div>
+
 <!-- Qoute of the day -->
 
 <div class="flex justify-center py-8 ">
@@ -132,15 +134,6 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
 <em>Dive into the stories behind my work, discover new techniques, and learn with me as we journey through the endless possibilities of art. <strong>Let’s create, explore, and grow together!</strong></em></p>
 </span>
   </article>
-</div>
-
-<!-- Search -->
-
-<div class="flex justify-center mx-auto max-w-prose py-8" style="margin-bottom: 10px;">
-  <input type="text" id="search-input" placeholder="Search for my works @muhash" size=12 style="width: 100%; height: 50px; padding: 15px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); font-size: 12px;">
-</div>
-<div class="flex justify-center mx-auto max-w-prose" style="margin-bottom: 10px; padding-bottom: 2.3rem;">
-  <ul style="width: 100%;" id="results-container"></ul>
 </div>
 
 <!-- Collaborations -->
@@ -289,7 +282,7 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
           
 
           
-          <a class="p-2" href="https://twitter.com/_muhash" style="background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
+          <a class="p-2" href="https://twitter.com/_muhash" style="color: rgb(101, 99, 255); background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
             </svg>
@@ -297,7 +290,7 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
           
 
           
-          <a class="p-2" href="https://www.instagram.com/_muhash/" style="background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
+          <a class="p-2" href="https://www.instagram.com/_muhash/" style="color: rgb(101, 99, 255); background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
@@ -309,7 +302,7 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
           
 
           
-          <a class="p-2" href="https://wa.me/919496659631?text=hey%20%3A)%0A" style="background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
+          <a class="p-2" href="https://wa.me/918848403432?text=hey%20%3A)%0A" style="color: rgb(101, 99, 255); background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
             <!-- Whatsapp -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
@@ -320,7 +313,7 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
           
 
           
-          <a class="p-2" href="mailto:muhammedashfar@hotmail.com" style="background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
+          <a class="p-2" href="mailto:muhammedashfar@hotmail.com" style="color: rgb(101, 99, 255); background: rgba(255, 255, 255, 0.24); border-radius: 50px; backdrop-filter: blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); padding: 10px;">
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -338,7 +331,7 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
   </div>
 </footer>
 
-    <div id="up-button" class="fixed bottom-5 right-5 p-2 text-white rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out bg-slate-100" style="display: none;">
+    <div style="z-index: 101;" id="up-button" class="fixed bottom-5 right-5 p-2 text-white rounded-full shadow-md cursor-pointer transition duration-300 ease-in-out bg-slate-100" style="display: none;">
     <a href="#top">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-indigo-600 w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
@@ -385,7 +378,7 @@ Step into <a href="https://muhash.site" title="@muhash">@muhash</a>, where creat
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
       dataSource: '/search.json',
-      searchResultTemplate: '<li style="font-family: Manjari; width: 100%; height: 50px; padding: 15px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); margin-bottom: 10px; font-size: 12px;"><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+      searchResultTemplate: '<li style="font-family: Manjari; width: 100%; padding: 15px; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(6.1px); -webkit-backdrop-filter:blur(6.1px); border: 1px solid rgba(255, 255, 255, 0.29); box-shadow: 0 4px 50px rgba(0, 0, 0, 0.04); margin-bottom: 10px; font-size: 12px; display: grid; grid-template-columns: 1fr 3fr; grid-gap: 10px; grid-template-rows: 1fr;"><a href="{url}" title="{desc}"><div style="display: flex;"><img src="{image}" style="width: 100%;"></div></a><a href="{url}"><div><span style="display: block; margin-bottom: 10px; margin-top: 10px;"><b>{title}</b></span><span style="display: block;">{desc}</span></div><\/a><\/li>',
       noResultsText: 'No results found',
       limit: 10,
       fuzzy: true,
