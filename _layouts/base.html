@@ -16,6 +16,14 @@
     {% include up_button.html %}
   </div>
 
+  <!-- PWA Script -->
+  <script>
+    if('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+      })
+    }
+  </script>
 
   <!-- Jekyll Search -->
   <script type="text/javascript">

@@ -1,0 +1,18 @@
+---
+layout: null
+---
+
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "{{ site.title }}",
+    "background_color": "#fff",
+    "theme_color": "#000",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "{{ site.data.metadata.meta_desc }}",
+    "icons": [{
+      "src": "/assets/images/logo.PNG",
+      "sizes":"any",
+      "type": "image/svg+xml"
+    }]
+  }

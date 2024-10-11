@@ -1,0 +1,30 @@
+---
+layout: base
+permalink: '/all-posts'
+---
+
+<!-- Menu -->
+{% include menu.html %}
+
+<!-- Posts -->
+ <div class="container mx-auto px-4">
+  <hr class="my-6 border-blueGray-300">
+ </div>
+
+<div class="flex justify-center mx-auto max-w-prose" style="margin-top: 30px; padding-bottom: 2.3rem; margin-bottom: 10px;">
+  <span style="font-size: 25px; font-weight: 700;">All posts</span>
+</div>
+<div class="md:w-4/5 mx-auto gap-4 md:gap-6 columns-1 md:columns-3">
+  {% for post in site.posts %}
+  <div class="md:fadeIn mb-8 break-inside-avoid-column ">
+    <div style="box-shadow: 8px 14px 45px -20px rgba(0,0,0,0.1);border: 1px solid #e6e6e6;">
+      <a href="{{ post.url }}">
+        <img src="{{ site.baseurl }}{{ post.image }}" alt="" class="w-full max-w-screen-sm h-auto shadow-md">
+      <a>
+    </div>
+    <div class="span-background">
+      <span style="font-family: 'Manjari', sans-serif; font-size: 10px;padding: 15px; color: #000;">{{ post.title | truncate: 25 }} | {{ post.category }}</span>
+    </div>
+  </div>  
+  {% endfor %}
+</div>
